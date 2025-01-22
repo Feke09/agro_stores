@@ -31,7 +31,7 @@ const Payment = ({ checkOutFormData }) => {
         // console.log(userCartSummary);
         // console.log(cartItems);
 
-        const response = await axios.post(`${BACKEND_BASE_URL} /order/create`, {
+        const response = await axios.post(`${BACKEND_BASE_URL}/order/create`, {
           reference,
           checkOutFormData,
           userCartSummary,
