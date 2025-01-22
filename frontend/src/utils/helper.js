@@ -7,6 +7,6 @@ export function formatCurrency(amount) {
 }
 
 export const BACKEND_BASE_URL =
-  process.send.NODE.ENV === "production"
+  process.env.NODE.ENV === "production"
     ? "https://agro-stores.onrender.com/api/v1"
     : "http://localhost:3000/api/v1";
